@@ -1,1 +1,1 @@
-// script for community portal
+// script for community portal --
