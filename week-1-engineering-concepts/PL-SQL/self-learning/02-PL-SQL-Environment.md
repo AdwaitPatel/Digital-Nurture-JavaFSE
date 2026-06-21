@@ -66,7 +66,7 @@ EXEC greet;
 ```
 
 ### Output
-![alt text](../screenshots/procedure_output.png)
+![alt text](../screenshots/02-PL-SQL-Environment/procedure_output.png)
 
 ### Explanation
 
@@ -110,7 +110,7 @@ Flow:
 ```
 
 ### Output
-![alt text](../screenshots/displayNum.png)
+![alt text](../screenshots/02-PL-SQL-Environment/displayNum.png)
 
 ---
 
@@ -151,7 +151,7 @@ Procedure ---> 100
 ```
 
 ### Output
-![alt text](../screenshots/out-param.png)
+![alt text](../screenshots/02-PL-SQL-Environment/out-param.png)
 
 ---
 
@@ -193,7 +193,7 @@ Flow:
 ```
 
 ### Output
-![alt text](../screenshots/square.png)
+![alt text](../screenshots/02-PL-SQL-Environment/square.png)
 
 ---
 
