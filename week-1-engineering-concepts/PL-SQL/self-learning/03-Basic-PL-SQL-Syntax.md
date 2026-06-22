@@ -142,10 +142,26 @@ END;
 /
 ```
 
-### Notes
+# Common PL/SQL Data Types
+
+| Data Type | Purpose |
+|------------|----------|
+| NUMBER | Stores numeric values |
+| VARCHAR2(n) | Stores variable-length strings |
+| CHAR(n) | Stores fixed-length strings |
+| DATE | Stores date and time |
+| BOOLEAN | Stores TRUE/FALSE values |
+
+![alt text](../screenshots/03-Basic-PL-SQL-Syntax/image.png)
+
+## Notes
 
 - Variables declared inside a nested block are not accessible outside it.
 - Outer block variables can be accessed inside inner blocks.
+- NUMBER is the most commonly used numeric type.
+- VARCHAR2 is the preferred string type in Oracle.
+- DATE stores both date and time.
+- BOOLEAN can be used in PL/SQL variables but not in table columns.
 
 ---
 
