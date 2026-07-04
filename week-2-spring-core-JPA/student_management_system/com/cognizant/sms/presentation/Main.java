@@ -2,11 +2,8 @@ package com.cognizant.sms.presentation;
 
 import com.cognizant.sms.model.Student;
 import com.cognizant.sms.service.StudentService;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import java.sql.*;
 
 // this class acts as a UI for interaction with all 4 layers
 public class Main {
