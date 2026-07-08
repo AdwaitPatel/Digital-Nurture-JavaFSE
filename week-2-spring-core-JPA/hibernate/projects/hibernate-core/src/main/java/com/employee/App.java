@@ -1,13 +1,9 @@
 package com.employee;
 
-import com.employee.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-
-import java.util.List;
-import java.util.Scanner;
 
 public class App
 {
