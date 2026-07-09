@@ -86,12 +86,12 @@ public class DBConnectionDoubleLocking {
 
 ## Comparison
 
-  Type                     Lazy   Thread Safe   Performance
-  ------------------------ ------ ------------- -------------
-  Eager                    ❌     ✅            High
-  Lazy                     ✅     ❌            High
-  Synchronized             ✅     ✅            Medium
-  Double Checked Locking   ✅     ✅            High
+  Type                    | Lazy  | Thread Safe  | Performance
+  ------------------------| ------|------------- | -------------
+  Eager                   | ❌    | ✅            | High
+  Lazy                    | ✅    | ❌            | High
+  Synchronized            | ✅    | ✅            | Medium
+  Double Checked Locking  | ✅    | ✅            | High
 
 ## Interview Points
 
