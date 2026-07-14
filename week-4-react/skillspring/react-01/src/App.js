@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import DeveloperBios from './components/DeveloperBios';
+import RouterDemo from './components/RouterDemo';
+import DeveloperForm from "./components/DeveloperForm";
 
 const devInfo = {
 	firstName: "Adwait",
@@ -28,7 +30,7 @@ class ClassComponent extends Component {
 	}
 }
 
-class Developer {
+export class Developer {
 	constructor(id, firstName, lastName, favoriteLanguage, yearStarted) {
 		this.id = id;
 		this.firstName = firstName;
@@ -38,32 +40,57 @@ class Developer {
 	}
 }
 
-class DisplayBios extends Component {
-	constructor(props) {
-		super(props);
+export function DisplayBios({ developers }) {
+	return (
+		<>
+			<h1>Developer Bios</h1>
 
-		this.state = {
-			developers: [
-				new Developer(1, "adwait", "patel", "js", 2025),
-				new Developer(2, "kunal", "kushwah", "java", 2019)
-			]
-		}
-
-	}
-
-	render() {
-		return (
-			this.state.developers.map(developer => <DeveloperBios {...developer} />)
-		)
-	}
+			{developers.map((developer) => (
+				<DeveloperBios
+					key={developer.id}
+					{...developer}
+				/>
+			))}
+		</>
+	);
 }
 
+// function App() {
+// 	return (
+// 		<div class="d-flex flex-column justify-content-center align-items-center" style={{ height: "100vh" }}>
+// 			{/* <DeveloperBios {...devInfo} /> */}
+// 			{/* <ClassComponent /> */}
+// 			{/* <DisplayBios /> */}
+// 			<RouterDemo />
+// 		</div>
+// 	);
+// }
+
 function App() {
+	const [developers, setDevelopers] = useState([
+		new Developer(1, "Adwait", "Patel", "Java", 2025),
+		new Developer(2, "Kunal", "Kushwah", "JavaScript", 2019),
+	]);
+
+	const addDeveloper = (developerData) => {
+		const newDeveloper = new Developer(
+			developers.length + 1,
+			developerData.firstName,
+			developerData.lastName,
+			developerData.favoriteLanguage,
+			developerData.yearStarted
+		);
+
+		setDevelopers([...developers, newDeveloper]);
+	};
+
 	return (
-		<div class="d-flex flex-column justify-content-center align-items-center" style={{ height: "100vh" }}>
-			{/* <DeveloperBios {...devInfo} /> */}
-			{/* <ClassComponent /> */}
-			<DisplayBios />
+		<div className="container mt-4">
+			<DeveloperForm addDeveloper={addDeveloper} />
+
+			<hr />
+
+			<DisplayBios developers={developers} />
 		</div>
 	);
 }
