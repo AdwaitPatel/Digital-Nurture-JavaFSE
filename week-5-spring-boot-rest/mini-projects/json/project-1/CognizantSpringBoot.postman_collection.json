@@ -1,0 +1,789 @@
+{
+    "info": {
+        "_postman_id": "848be944-14ad-420c-baf9-04fa3e0f302c",
+        "name": "CognizantSpringBoot",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "43976992",
+        "_collection_link": "https://go.postman.co/collection/43976992-848be944-14ad-420c-baf9-04fa3e0f302c?source=collection_link"
+    },
+    "item": [
+        {
+            "name": "JPA + H2db",
+            "item": [
+                {
+                    "name": "getStudents",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "getStudents",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "1004"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:06:54 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n    {\n        \"id\": 57,\n        \"name\": \"Halie Lehner\",\n        \"email\": \"Kendrick20@gmail.com\",\n        \"age\": 25\n    },\n    {\n        \"id\": 921,\n        \"name\": \"Jayda Hills\",\n        \"email\": \"Kaleb.Bernier@yahoo.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 1238,\n        \"name\": \"Nels Murazik\",\n        \"email\": \"Elena_Bogan@gmail.com\",\n        \"age\": 22\n    },\n    {\n        \"id\": 1922,\n        \"name\": \"Everardo Torp\",\n        \"email\": \"Avery.OKeefe@hotmail.com\",\n        \"age\": 25\n    },\n    {\n        \"id\": 3282,\n        \"name\": \"Gabriel Stiedemann\",\n        \"email\": \"Benton.Kiehn@yahoo.com\",\n        \"age\": 19\n    },\n    {\n        \"id\": 5186,\n        \"name\": \"Llewellyn Auer\",\n        \"email\": \"Johnpaul.Abshire@hotmail.com\",\n        \"age\": 23\n    },\n    {\n        \"id\": 5369,\n        \"name\": \"Aylin Mayert\",\n        \"email\": \"Maudie.Reichert@gmail.com\",\n        \"age\": 18\n    },\n    {\n        \"id\": 5577,\n        \"name\": \"Leora Sporer\",\n        \"email\": \"Joaquin2@hotmail.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 6924,\n        \"name\": \"Melvina Tremblay\",\n        \"email\": \"Elna90@hotmail.com\",\n        \"age\": 23\n    },\n    {\n        \"id\": 7261,\n        \"name\": \"Amie Roberts\",\n        \"email\": \"Wilfredo.Lubowitz8@yahoo.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 8675,\n        \"name\": \"Alena Wiegand\",\n        \"email\": \"Norene6@hotmail.com\",\n        \"age\": 20\n    },\n    {\n        \"id\": 8685,\n        \"name\": \"Susie Bruen\",\n        \"email\": \"Millie17@hotmail.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 9667,\n        \"name\": \"Earnestine Corkery\",\n        \"email\": \"Harold25@yahoo.com\",\n        \"age\": 20\n    }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "getStudentById",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students/7323",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "7323"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "getStudentById",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students/8685",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "8685"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "72"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:07:42 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "{\n    \"id\": 8685,\n    \"name\": \"Susie Bruen\",\n    \"email\": \"Millie17@hotmail.com\",\n    \"age\": 21\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "getStudentByEmail",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students/email/Norene6@hotmail.com",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "email",
+                                "Norene6@hotmail.com"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "getStudentByEmail",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students/email/Norene6@hotmail.com",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "email",
+                                        "Norene6@hotmail.com"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Disposition",
+                                    "value": "inline;filename=f.txt"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "73"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:09:14 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "{\n    \"id\": 8675,\n    \"name\": \"Alena Wiegand\",\n    \"email\": \"Norene6@hotmail.com\",\n    \"age\": 20\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "getStudentsByAge",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students/age/21",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "age",
+                                "21"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "getStudentByAge",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students/age/21",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "age",
+                                        "21"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "305"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:09:33 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "[\n    {\n        \"id\": 921,\n        \"name\": \"Jayda Hills\",\n        \"email\": \"Kaleb.Bernier@yahoo.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 5577,\n        \"name\": \"Leora Sporer\",\n        \"email\": \"Joaquin2@hotmail.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 7261,\n        \"name\": \"Amie Roberts\",\n        \"email\": \"Wilfredo.Lubowitz8@yahoo.com\",\n        \"age\": 21\n    },\n    {\n        \"id\": 8685,\n        \"name\": \"Susie Bruen\",\n        \"email\": \"Millie17@hotmail.com\",\n        \"age\": 21\n    }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "getStudentByName",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students/name/Mollie Sawayn",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "name",
+                                "Mollie Sawayn"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "getStudentByName",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students/name/Mollie Sawayn",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "name",
+                                        "Mollie Sawayn"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "84"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:23:16 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "[\n    {\n        \"id\": 7323,\n        \"name\": \"Mollie Sawayn\",\n        \"email\": \"Robert_Bergstrom42@yahoo.com\",\n        \"age\": 25\n    }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "getStudentsByGreaterThanAge",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students/more-than-age/24",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "more-than-age",
+                                "24"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "getStudentsByGreaterThanAge",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students/more-than-age/24",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "more-than-age",
+                                        "24"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "338"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:36:04 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "[\n    {\n        \"id\": 4816,\n        \"name\": \"Aiden Kilback\",\n        \"email\": \"Rory.Marquardt22@hotmail.com\",\n        \"age\": 25\n    },\n    {\n        \"id\": 5017,\n        \"name\": \"Jackeline Hartmann\",\n        \"email\": \"Emmanuel.Carter40@gmail.com\",\n        \"age\": 25\n    },\n    {\n        \"id\": 7347,\n        \"name\": \"Otilia Harris\",\n        \"email\": \"Harold87@gmail.com\",\n        \"age\": 25\n    },\n    {\n        \"id\": 8437,\n        \"name\": \"Veronica Nicolas\",\n        \"email\": \"Margarette.Heidenreich93@hotmail.com\",\n        \"age\": 25\n    }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "addStudent",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "pm.variables.set(\"id\", Math.floor(Math.random() * 10000));",
+                                    "",
+                                    "pm.variables.set(",
+                                    "    \"name\",",
+                                    "    pm.variables.replaceIn(\"{{$randomFirstName}} {{$randomLastName}}\")",
+                                    ");",
+                                    "",
+                                    "pm.variables.set(",
+                                    "    \"email\",",
+                                    "    pm.variables.replaceIn(\"{{$randomEmail}}\")",
+                                    ");",
+                                    "",
+                                    "pm.variables.set(",
+                                    "    \"age\",",
+                                    "    Math.floor(Math.random() * 8) + 18",
+                                    ");"
+                                ],
+                                "type": "text/javascript",
+                                "packages": {},
+                                "requests": {}
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "",
+                                    "// 1. Status code is 200 or 201",
+                                    "pm.test(\"Status code is 200 or 201\", function () {",
+                                    "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                                    "});",
+                                    "",
+                                    "// 2. Response body is JSON",
+                                    "pm.test(\"Response body is JSON\", function () {",
+                                    "    pm.response.to.be.json;",
+                                    "});",
+                                    "",
+                                    "// 3. Response has all required fields: id, name, email, age",
+                                    "pm.test(\"Response has all required fields: id, name, email, age\", function () {",
+                                    "    const jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData).to.have.property(\"id\");",
+                                    "    pm.expect(jsonData).to.have.property(\"name\");",
+                                    "    pm.expect(jsonData).to.have.property(\"email\");",
+                                    "    pm.expect(jsonData).to.have.property(\"age\");",
+                                    "});",
+                                    "",
+                                    "// 4. id is a number",
+                                    "pm.test(\"id is a number\", function () {",
+                                    "    const jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.id).to.be.a(\"number\");",
+                                    "});",
+                                    "",
+                                    "// 5. name is a string and is not empty",
+                                    "pm.test(\"name is a string and is not empty\", function () {",
+                                    "    const jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.name).to.be.a(\"string\").and.to.not.be.empty;",
+                                    "});",
+                                    "",
+                                    "// 6. email is a string and matches a basic email format",
+                                    "pm.test(\"email is a string and matches a basic email format\", function () {",
+                                    "    const jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.email).to.be.a(\"string\");",
+                                    "    pm.expect(jsonData.email).to.match(/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/);",
+                                    "});",
+                                    "",
+                                    "// 7. age is a number and is between 18 and 25",
+                                    "pm.test(\"age is a number and is between 18 and 25\", function () {",
+                                    "    const jsonData = pm.response.json();",
+                                    "    pm.expect(jsonData.age).to.be.a(\"number\");",
+                                    "    pm.expect(jsonData.age).to.be.at.least(18);",
+                                    "    pm.expect(jsonData.age).to.be.at.most(25);",
+                                    "});",
+                                    "",
+                                    "// 8. Response time is less than 2000ms",
+                                    "pm.test(\"Response time is less than 2000ms\", function () {",
+                                    "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                                    "});",
+                                    ""
+                                ],
+                                "type": "text/javascript",
+                                "packages": {},
+                                "requests": {}
+                            }
+                        }
+                    ],
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"id\": {{id}},\n    \"name\": \"{{name}}\",\n    \"email\": \"{{email}}\",\n    \"age\": {{age}}\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{springlocal}}/students",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "addStudent",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"id\": {{id}},\n    \"name\": \"{{name}}\",\n    \"email\": \"{{email}}\",\n    \"age\": {{age}}\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{springlocal}}/students",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "77"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:10:01 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "{\n    \"id\": 5699,\n    \"name\": \"Bonita Will\",\n    \"email\": \"Adriana.Treutel@gmail.com\",\n    \"age\": 24\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "updateStudent",
+                    "request": {
+                        "method": "PUT",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"id\": 57,\n    \"name\": \"Halie Patel\",\n    \"email\": \"halieewq20@gmail.com\",\n    \"age\": 25\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{springlocal}}/students/57",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "57"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "updateStudent",
+                            "originalRequest": {
+                                "method": "PUT",
+                                "header": [],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"id\": 57,\n    \"name\": \"Halie Patel\",\n    \"email\": \"halieewq20@gmail.com\",\n    \"age\": 25\n}",
+                                    "options": {
+                                        "raw": {
+                                            "language": "json"
+                                        }
+                                    }
+                                },
+                                "url": {
+                                    "raw": "{{springlocal}}/students/57",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "57"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "json",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "70"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:11:50 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "{\n    \"id\": 57,\n    \"name\": \"Halie Patel\",\n    \"email\": \"halieewq20@gmail.com\",\n    \"age\": 25\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "deleteStudent",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{springlocal}}/students/5699",
+                            "host": [
+                                "{{springlocal}}"
+                            ],
+                            "path": [
+                                "students",
+                                "5699"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "deleteStudent",
+                            "originalRequest": {
+                                "method": "DELETE",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{springlocal}}/students/6924",
+                                    "host": [
+                                        "{{springlocal}}"
+                                    ],
+                                    "path": [
+                                        "students",
+                                        "6924"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "text",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-yaml",
+                                    "description": "",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "28"
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Thu, 16 Jul 2026 18:12:44 GMT"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=60"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                }
+                            ],
+                            "cookie": [
+                                {
+                                    "expires": "Invalid Date",
+                                    "domain": "",
+                                    "path": ""
+                                }
+                            ],
+                            "body": "Student Deleted Successfully\n"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "springlocal",
+            "value": ""
+        }
+    ]
+}
